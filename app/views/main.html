@@ -1,0 +1,162 @@
+<div class="header row">
+    <div class="col-sm-6">
+        <h1 class="name">{{cvData.name}}</h1>
+    </div>
+    <div class="col-sm-6">
+        <div class="bottom-right-out">
+            <a ng-repeat="socialInfo in cvData.socials" ng-href="{{socialInfo.href}}"><img
+                    ng-src="{{socialInfo.iconUrl}}" alt="{{socialInfo.altText}}" height="32" width="32"/></a>
+        </div>
+    </div>
+</div>
+
+<div class="opener">
+    <div class="row">
+
+        <div class="col-sm-12 col-md-12">
+            <ul class="headerBullets">
+                <li ng-repeat="headerBullet in cvData.headerBullets">{{headerBullet.html}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+
+    <div class="col-sm-12 col-md-12">
+        <h3>{{'SKILLS' | translate}}</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-md-6">
+        <h4>{{'LANGUAGES' | translate}}</h4>
+        <span ng-repeat="skill in cvData.skills.languages"><button type="button" class="btn btn-default btn-sm skill"
+                                                                   popover="{{skill.popoverHtml}}"
+                                                                   popover-trigger="mouseenter"
+                                                                   popover-title="{{skill.popoverTitle}}"  popover-append-to-body="true">
+            {{skill.label}}
+        </button></span>
+    </div>
+    <div class="col-sm-6 col-md-6">
+        <h4>Frameworks & Platforms</h4>
+        <span ng-repeat="skill in cvData.skills.frameworksAndPlatforms"><button type="button"
+                                                                                class="btn btn-default btn-sm skill"
+                                                                                popover="{{skill.popoverHtml}}"
+                                                                                popover-trigger="mouseenter"
+                                                                                popover-title="{{skill.popoverTitle}}"  popover-append-to-body="true">
+            {{skill.label}}
+        </button></span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-md-6">
+        <h4>{{'SYSTEMS_SERVERS' | translate}}</h4>
+        <span ng-repeat="skill in cvData.skills.systemsAndServers"><button type="button" class="btn btn-default btn-sm skill"
+                                                                 popover="{{skill.popoverHtml}}"
+                                                                 popover-trigger="mouseenter"
+                                                                 popover-title="{{skill.popoverTitle}}" popover-append-to-body="true">{{skill.label}}
+        </button></span>
+
+    </div>
+    <div class="col-sm-6 col-md-6">
+        <h4>{{'OTHER' | translate}}</h4>
+        <span ng-repeat="skill in cvData.skills.other"><button type="button" class="btn btn-default btn-sm skill"
+                                                               popover="{{skill.popoverHtml}}"
+                                                               popover-trigger="mouseenter"
+                                                               popover-title="{{skill.popoverTitle}}"  popover-append-to-body="true">{{skill.label}}
+        </button></span>
+    </div>
+</div>
+<hr/>
+<div class="row">
+
+    <div class="col-sm-12 col-md-12">
+        <h3>{{'EXPERIENCE' | translate}}</h3>
+    </div>
+</div>
+
+<div ng-controller="CollapseCtrl" ng-repeat="experience in cvData.experiences">
+    <div class="row skills">
+        <div class="col-sm-12 col-md-12 margin-top-small" ng-click="isCollapsed = !isCollapsed">
+            <h4>{{experience.title}} - {{experience.focus}}</h4>
+            {{experience.company}}<br ng-if="experience.company"/> <span class="text-muted">{{experience.dates}}</span> <span class="see-more">[{{collapsedMessage}}]</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div collapse="isCollapsed">
+                <div class="well well-lg experiences"  ng-bind-html="experience.details"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<hr/>
+<div class="row">
+
+    <div class="col-sm-12 col-md-12">
+        <h3>{{'EDUCATION' | translate}}</h3>
+    </div>
+</div>
+<div class="row" ng-controller="CollapseCtrl" ng-repeat="education in cvData.educationalHistory">
+    <div class="col-sm-12 col-md-12" ng-click="isCollapsed = !isCollapsed">
+        <h4>{{education.areaOfStudy}}</h4>
+        <span ng-if="education.institution">{{education.institution}}, {{education.completionDate}}</span><span class="see-more">[{{collapsedMessage}}]</span>
+
+        <div collapse="isCollapsed">
+            <div class="well well-lg"  ng-bind-html="education.details">
+            </div>
+        </div>
+    </div>
+</div>
+<hr/>
+<div ng-controller="CollapseCtrl" ng-click="isCollapsed = !isCollapsed">
+    <div class="row">
+
+        <div class="col-xs-6">
+            <h3>{{'INTERESTS' | translate}}</h3>
+
+        </div>
+
+        <div class="col-xs-6 text-col-middle">
+            <h3><span class="see-more-big">[{{collapsedMessage}}]</span></h3>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div collapse="isCollapsed">
+                <div class="well well-lg">
+                    {{cvData.interestIntroduction}}
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <ul>
+                                <li ng-repeat="interest in cvData.interests.slice(0, (cvData.interests.length / 2))">
+                                    {{interest.summary}}
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6">
+                            <ul>
+                                <li ng-repeat="interest in cvData.interests.slice((cvData.interests.length / 2), cvData.interests.length)">
+                                    {{interest.summary}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <div class="text-center">
+            <a ng-href="mailto:{{cvData.email}}">{{cvData.email}}</a><br/><br/>
+            <span class="text-muted">{{'THANK_YOU' | translate}}</span>
+        </div>
+    </div>
+</div>

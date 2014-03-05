@@ -1,0 +1,252 @@
+{
+    "name": "John Doe",
+    "email": "john@doe.com",
+    "socials": [
+        {
+            "href": "https://github.com/derekdata",
+            "iconUrl": "../images/icons/github/github-64-black.png",
+            "altText": "Github"
+        },
+        {
+            "href": "https://profiles.wordpress.org/apes/",
+            "iconUrl": "../images/icons/wordpress/wordpress-64-black.png",
+            "altText": "WordPress"
+        },
+
+        {
+            "href": "https://www.linkedin.com/",
+            "iconUrl": "../images/icons/linkedin/linkedin-64-black.png",
+            "altText": "LinkedIn"
+        },
+
+        {
+            "href": "https://smarterer.com/apes",
+            "iconUrl": "../images/smarterer/64px.png",
+            "altText": "Smarterer"
+        },
+
+        {
+            "href": "mailto:john@doe.com",
+            "iconUrl": "./images/icons/gmail/gmail-64-black.png",
+            "altText": "e-mail john@doe.com"
+        }
+    ],
+    "headerBullets": [
+        {
+            "html": "Taught my children how to read"
+        },
+        {
+            "html": "Coached championship baseball team"
+        },
+        {
+            "html": "Rewrote SAP in an afternoon"
+        },
+        {
+            "html": "Awarded Nobel Prize in Physics"
+        }
+    ],
+    "skills": {
+        "languages": [
+            {
+                "label": "Java",
+                "popoverHtml": "<ul><li>Sun Certified Java Programmer</li></ul>",
+                "popoverTitle": "~85 years experience"
+            },
+            {
+                "label": "Java EE",
+                "popoverHtml": "<ul><li>JSF</li></ul>",
+                "popoverTitle": "~2 years experience"
+            },
+            {
+                "label": "Python",
+                "popoverHtml": "<ul><li>Django</li></ul>",
+                "popoverTitle": "~18 years experience"
+            },
+            {
+                "label": "PHP",
+                "popoverHtml": " ",
+                "popoverTitle": "~10 years experience"
+            },
+            {
+                "label": "JavaScript",
+                "popoverHtml": " ",
+                "popoverTitle": "~11 years experience"
+            },
+            {
+                "label": "HTML",
+                "popoverHtml": "<ul><li>HTML5, XHTML</li></ul>",
+                "popoverTitle": "~15 years experience"
+            },
+            {
+                "label": "XML",
+                "popoverHtml": " ",
+                "popoverTitle": "~15 years experience"
+            },
+            {
+                "label": "JSON",
+                "popoverHtml": " ",
+                "popoverTitle": "~5 years experience"
+            },
+            {
+                "label": "CSS",
+                "popoverHtml": "<ul><li>CSS3</li></ul>",
+                "popoverTitle": "~2 years experience"
+            },
+            {
+                "label": "SASS/LESS",
+                "popoverHtml": " ",
+                "popoverTitle": "~2 years experience"
+            },
+            {
+                "label": "Perl",
+                "popoverHtml": "",
+                "popoverTitle": "~2 years light experience"
+            },
+            {
+                "label": "C / C++",
+                "popoverHtml": " ",
+                "popoverTitle": "Various light experience"
+            },
+            {
+                "label": "sh",
+                "popoverHtml": "<ul><li>bash</li><li>Scripting</li></ul> ",
+                "popoverTitle": "~2 years experience"
+            }
+        ],
+        "frameworksAndPlatforms": [
+            {
+                "label": "Spring",
+                "popoverHtml": " ",
+                "popoverTitle": "~10 years experience"
+            },
+            {
+                "label": "AngularJS",
+                "popoverHtml": " ",
+                "popoverTitle": "~3 years experience"
+            },
+            {
+                "label": "jQuery",
+                "popoverHtml": "<ul><li>Core</li><li>JQuery UI</li><li>Various Plugins</li></ul> ",
+                "popoverTitle": "~8 years experience"
+            },
+            {
+                "label": "Android",
+                "popoverHtml": " ",
+                "popoverTitle": "~3 years experience"
+            },
+            {
+                "label": "PhoneGap/Cordova",
+                "popoverHtml": " ",
+                "popoverTitle": "~2 years experience"
+            }
+        ],
+        "systemsAndServers": [
+            {
+                "label": "Linux/Unix",
+                "popoverHtml": "<ul><li>Ubuntu</li><li>HPUX</li></ul>",
+                "popoverTitle": "~15 years experience"
+            },
+            {
+                "label": "WebLogic",
+                "popoverHtml": " ",
+                "popoverTitle": "~11 years experience"
+            },
+            {
+                "label": "JBoss",
+                "popoverHtml": " ",
+                "popoverTitle": "~4 years experience"
+            },
+            {
+                "label": "Tomcat",
+                "popoverHtml": " ",
+                "popoverTitle": "~4 years experience"
+            },
+            {
+                "label": "Jetty",
+                "popoverHtml": " ",
+                "popoverTitle": "~7 years experience"
+            },
+            {
+                "label": "MySQL",
+                "popoverHtml": " ",
+                "popoverTitle": "~15 years experience"
+            }
+        ],
+        "other": [
+            {
+                "label": "SOFEA",
+                "popoverHtml": " ",
+                "popoverTitle": "~4 years experience"
+            },
+            {
+                "label": "XHR / AJAX",
+                "popoverHtml": " ",
+                "popoverTitle": "~7 years experience"
+            },
+            {
+                "label": "Git",
+                "popoverHtml": " ",
+                "popoverTitle": "~3 years experience"
+            },
+            {
+                "label": "Subversion",
+                "popoverHtml": " ",
+                "popoverTitle": "~8 years experience"
+            },
+            {
+                "label": "LDAP",
+                "popoverHtml": " ",
+                "popoverTitle": "~10 years experience"
+            },
+            {
+                "label": "SEO",
+                "popoverHtml": " ",
+                "popoverTitle": "~10 years experience"
+            },
+            {
+                "label": "Ant",
+                "popoverHtml": " ",
+                "popoverTitle": "~10 years experience"
+            }
+        ]
+    },
+    "experiences": [
+        {
+            "title": "CTO",
+            "focus": "Specialty Products",
+            "dates": "March 2003 - Present",
+            "company": "NASA Invents",
+            "details": "Launched the space shuttle."
+        },
+        {
+            "title": "Senior Architect",
+            "focus": "SR-71 Blackbird Flight Control System",
+            "dates": "May 1970 - March 2003",
+            "details": "Programmed flight computer."
+        }
+    ],
+    "educationalHistory": [
+        {
+            "areaOfStudy": "Bachelor of Science, Computer Science",
+            "institution": "Duke University",
+            "completionDate": "May 1965",
+            "details": "Graduated with honors.  Minor in Astrophysics."
+        },
+        {
+            "areaOfStudy": "Professional Development",
+            "details": "SR-71 Flight Training Graduate"
+        }
+    ],
+    "interestIntroduction": "Other items I am interested in..",
+    "interests" : [
+        {
+            "summary": "Cheese making"
+        },
+        {
+            "summary": "Glass etching"
+        },
+        {
+            "summary": "Stargazing"
+        }
+    ]
+}

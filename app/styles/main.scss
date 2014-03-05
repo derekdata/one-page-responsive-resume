@@ -1,0 +1,267 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+  min-height: 2000px;
+  padding-top: 51px;
+}
+
+.resume-header {
+  background: none;
+}
+
+.contact {
+  padding: 0 10px 10px 10px;
+  text-align: center;
+}
+
+.skill {
+  margin: 4px 2px 0 0;
+}
+
+.see-more {
+  color: grey;
+  margin-left: 10px;
+  font-size: 10px;
+  vertical-align: middle;
+}
+.see-more:hover {
+  color: black;
+  font-size: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.see-more-big {
+  @extend .see-more;
+  font-size: 12px;
+  float:right;
+}
+.see-more-big:hover {
+  @extend .see-more:hover;
+  font-size: 12px;
+  float:right;
+}
+
+.well {
+  margin-top: 5px;
+}
+
+.opener {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 6px;
+  background-color: #eeeeee;
+}
+
+
+.skill5 {
+  background-color: #ff0000;
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 255, 0.6);
+}
+.skill4 {
+  background-color: #ff5500;
+  color: white;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+.skill3 {
+  background-color: #ffaa00;
+  color: white;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+.skill2 {
+  background-color: #ffd500;
+  color: white;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+.skill1 {
+   background-color: #ffff00;
+   color: white;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.name {
+  margin: 0 0 10px 0;
+}
+.text-col-middle {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.headerBullets {
+  margin: 0 0 0 0;
+}
+
+///* 3. Hero */
+//.hero { background-color:#f3f3f3; margin-bottom:30px; border-bottom:1px solid #d5d5d5;
+//  //display:none;
+//  background-image: -moz-linear-gradient(top,#f3f3f3,#dddddd);
+//  background-image: -webkit-gradient(linear,0 0,0 100%,from(#f3f3f3),to(#dddddd));
+//  background-image: -webkit-linear-gradient(top,#f3f3f3,#dddddd);
+//  background-image: -o-linear-gradient(top,#f3f3f3,#dddddd);
+//  background-image: linear-gradient(to bottom,#f3f3f3,#dddddd);
+//  background-repeat: repeat-x;}
+//.hero .hero-unit{ background-color: transparent; margin-bottom:0px; padding-top:110px; position:relative}
+//.hero-unit .span3{ float:right }
+//.hero-unit h1{ margin-top:0px; line-height:1; font-size:50px }
+//.hero-unit h2{ font-size:24.5px}
+//.hero-unit address{ line-height:30px; margin-top:2px}
+//.hero-unit abbr[title], .hero-unit abbr[data-original-title]{ width:20px; display:inline-block; text-align:center; background: url(../images/bg-perpendicular.png) repeat; border-bottom:none; line-height:24px}
+//.hero-unit .avatar{  background: url(../images/bg-perpendicular.png) repeat #fff; padding:10px;}
+//.social { margin:0px; background-color:#ccc; position:absolute; bottom:0px;}
+//.social li{ float:left; display:block; border-left:dashed 1px #b3b3b3;  background-color:#d6d6d4;}
+//.social li:first-child{ border:none }
+//.social li a{ display:block; width:55px; height:42px; background-color:#d6d6d4; background-repeat:no-repeat; background-image:url(../images/social.png);}
+//.social li a:hover{
+//  -webkit-transition: background 0.2s ease;
+//  -moz-transition: background 0.2s ease;
+//  -ms-transition: background 0.2s ease;
+//  -o-transition: background 0.2s ease;
+//  transition: background 0.2s ease;
+//}
+
+//
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+.popover-content ul {
+  padding: 0 0 0 15px;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+div.experiences ul {
+   padding-top: 5px;
+}
+
+div.experiences li {
+  padding-bottom: 5px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+.latest-text {
+  margin-left: 15px;
+  font-size: 75%;
+}
+
+/* Space out the masthead */
+.header {
+  margin-bottom: 10px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 830px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+    .followup-row {
+      margin-top: 10px;
+    }
+    .bottom-right-out {
+      margin-top: 20px;
+      float: right;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 768px) {
+  .bottom-right-out {
+    margin-left: 20px;
+  }
+  .margin-top-small {
+    margin-top:20px;
+  }
+  .popover {
+    display: none !important;
+  }
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .collapse {
+    display: block !important;
+    height: auto !important;
+  }
+  .see-more {
+    display: none !important;
+  }
+}
