@@ -1,9 +1,9 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: CVCtrl', function () {
 
-  // load the controller's module
-  beforeEach(module('resumeApp'));
+    // load the controller's module
+    beforeEach(module('resumeApp'));
 
   var MainCtrl,
     scope;
@@ -11,9 +11,9 @@ describe('Controller: MainCtrl', function () {
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
-      $scope: scope
-    });
+      MainCtrl = $controller('CVCtrl', {
+          $scope: scope
+      });
   }));
 
   it('should attach a list of awesomeThings to the scope', function () {

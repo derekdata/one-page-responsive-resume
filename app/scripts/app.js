@@ -17,26 +17,27 @@ angular.module('resumeApp', [
             .otherwise({
                 redirectTo: '/'
             });
-    }).config(function($translateProvider) {
+    }).config(function ($translateProvider) {
 
-    $translateProvider.translations('en-US', {
-        SKILLS: 'Skills',
-        LANGUAGES: 'Languages',
-        SYSTEMS_SERVERS: 'Systems / Servers',
-        OTHER: 'Other',
-        EXPERIENCE: 'Experience',
-        EDUCATION: 'Education',
-        INTERESTS: 'Interests',
-        THANK_YOU: 'Thank You'
-    })
+        $translateProvider.translations('en-US', {
+            SKILLS: 'Skills',
+            LANGUAGES: 'Languages',
+            SYSTEMS_SERVERS: 'Systems / Servers',
+            OTHER: 'Other',
+            EXPERIENCE: 'Experience',
+            EDUCATION: 'Education',
+            INTERESTS: 'Interests',
+            THANK_YOU: 'Thank You',
+            TITLE: 'Résumé'
+        })
 
-    $translateProvider.fallbackLanguage('en');
+        $translateProvider.fallbackLanguage('en');
 
-    var language = window.navigator.userLanguage || window.navigator.language;
+        var language = window.navigator.userLanguage || window.navigator.language;
 
-    if (language !== undefined && language !== "") {
-        $translateProvider.preferredLanguage(language);
-    }
+        if (language !== undefined && language !== "") {
+            $translateProvider.preferredLanguage(language);
+        }
 
 
-});
+    });
