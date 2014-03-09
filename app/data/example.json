@@ -4,18 +4,18 @@
     "socials": [
         {
             "href": "https://github.com/derekdata",
-            "iconUrl": "../images/icons/github/github-64-black.png",
+            "iconUrl": "../images/github/github-64-black.png",
             "altText": "Github"
         },
         {
             "href": "https://profiles.wordpress.org/apes/",
-            "iconUrl": "../images/icons/wordpress/wordpress-64-black.png",
+            "iconUrl": "../images/wordpress/wordpress-64-black.png",
             "altText": "WordPress"
         },
 
         {
             "href": "https://www.linkedin.com/",
-            "iconUrl": "../images/icons/linkedin/linkedin-64-black.png",
+            "iconUrl": "../images/linkedin/linkedin-64-black.png",
             "altText": "LinkedIn"
         },
 
@@ -27,7 +27,7 @@
 
         {
             "href": "mailto:john@doe.com",
-            "iconUrl": "./images/icons/gmail/gmail-64-black.png",
+            "iconUrl": "./images/gmail/gmail-64-black.png",
             "altText": "e-mail john@doe.com"
         }
     ],
