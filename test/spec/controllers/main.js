@@ -1,22 +1,34 @@
 'use strict';
 
-describe('Controller: CVCtrl', function () {
+describe('Controller: CollapseCtrl', function () {
 
     // load the controller's module
     beforeEach(module('resumeApp'));
 
-  var MainCtrl,
-    scope;
+    var CollapseCtrl,
+        scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-      MainCtrl = $controller('CVCtrl', {
+      CollapseCtrl = $controller('CollapseCtrl', {
           $scope: scope
       });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
-  });
+    it('should handle collapse and expansion properly', function () {
+
+        expect(scope.isCollapsed).toBe(true);
+        expect(scope.collapsedMessage).toBe("read more");
+
+        scope.isCollapsed = false;
+        scope.$digest();
+        expect(scope.isCollapsed).toBe(false);
+        expect(scope.collapsedMessage).toBe("read less");
+
+        scope.isCollapsed = true;
+        scope.$digest();
+        expect(scope.isCollapsed).toBe(true);
+        expect(scope.collapsedMessage).toBe("read more");
+    });
 });

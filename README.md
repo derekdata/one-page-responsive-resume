@@ -1,4 +1,4 @@
-one-page-responsive-resume
+one-page-responsive-resume [![Build Status](https://travis-ci.org/derekdata/one-page-responsive-resume.png?branch=master)](https://travis-ci.org/derekdata/one-page-responsive-resume)
 ==========================
 
 Dynamic résumé application built with AngularJS, SASS, Angular Bootstrap, and a host of other supporting libraries.
