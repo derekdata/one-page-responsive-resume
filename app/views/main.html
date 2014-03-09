@@ -80,7 +80,8 @@
     <div class="row skills">
         <div class="col-sm-12 col-md-12 margin-top-small" ng-click="isCollapsed = !isCollapsed">
             <h4>{{experience.title}} - {{experience.focus}}</h4>
-            {{experience.company}}<br ng-if="experience.company"/> <span class="text-muted">{{experience.dates}}</span> <span class="see-more">[{{collapsedMessage}}]</span>
+            {{experience.company}}<br ng-if="experience.company"/> <span class="text-muted">{{experience.dates}}</span>
+            <span class="see-more">[{{collapsedMessage | translate : type}}]</span>
         </div>
     </div>
     <div class="row">
@@ -103,7 +104,8 @@
 <div class="row" ng-controller="CollapseCtrl" ng-repeat="education in cvData.educationalHistory">
     <div class="col-sm-12 col-md-12" ng-click="isCollapsed = !isCollapsed">
         <h4>{{education.areaOfStudy}}</h4>
-        <span ng-if="education.institution">{{education.institution}}, {{education.completionDate}}</span><span class="see-more">[{{collapsedMessage}}]</span>
+        <span ng-if="education.institution">{{education.institution}}, {{education.completionDate}}</span><span
+            class="see-more">[{{collapsedMessage | translate : type}}]</span>
 
         <div collapse="isCollapsed">
             <div class="well well-lg"  ng-bind-html="education.details">
@@ -121,7 +123,7 @@
         </div>
 
         <div class="col-xs-6 text-col-middle">
-            <h3><span class="see-more-big">[{{collapsedMessage}}]</span></h3>
+            <h3><span class="see-more-big">[{{collapsedMessage | translate : type}}]</span></h3>
         </div>
 
     </div>

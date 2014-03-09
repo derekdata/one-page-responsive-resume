@@ -27,15 +27,17 @@ angular.module('resumeApp', [
             EXPERIENCE: 'Experience',
             EDUCATION: 'Education',
             INTERESTS: 'Interests',
-            THANK_YOU: 'Thank You',
+            THANK_YOU: 'Thank you',
+            READ_LESS: 'read less',
+            READ_MORE: 'read more',
             TITLE: 'Résumé'
-        })
+        });
 
         $translateProvider.fallbackLanguage('en');
 
         var language = window.navigator.userLanguage || window.navigator.language;
 
-        if (language !== undefined && language !== "") {
+        if (language !== undefined && language !== '') {
             $translateProvider.preferredLanguage(language);
         }
 

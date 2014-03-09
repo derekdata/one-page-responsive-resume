@@ -11,14 +11,14 @@ angular.module('resumeApp')
     })
     .controller('CollapseCtrl', function ($scope) {
         $scope.isCollapsed=true;
-        $scope.collapsedMessage="read more";
+        $scope.collapsedMessage = 'READ_MORE';
 
         $scope.$watch('isCollapsed', function (newValue) {
             if (newValue === false) {
-                $scope.collapsedMessage="read less";
+                $scope.collapsedMessage = 'READ_LESS';
             }
             else {
-                $scope.collapsedMessage="read more";
+                $scope.collapsedMessage = 'READ_MORE';
             }
         }, true);
     });
