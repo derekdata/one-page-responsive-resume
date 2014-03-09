@@ -156,6 +156,9 @@
     <div class="col-sm-12 col-md-12">
         <div class="text-center">
             <a ng-href="mailto:{{cvData.email}}">{{cvData.email}}</a><br/><br/>
+            <span class="text-muted">{{cvData.postalAddress}}<br/><a class="text-muted"
+                                                                     ng-href="tel:{{cvData.phoneNumber}}">{{cvData.phoneNumber}}</a></span>
+            <br/><br/>
             <span class="text-muted">{{'THANK_YOU' | translate}}</span>
         </div>
     </div>

@@ -1,6 +1,8 @@
 {
     "name": "John Doe",
     "email": "john@doe.com",
+    "postalAddress": "123 Main Street, San Diego, California",
+    "phoneNumber": "888.555.1212",
     "socials": [
         {
             "href": "https://github.com/derekdata",
