@@ -10,15 +10,11 @@ Installation
 ============
 
 
-Testing
-=======
-
-
 
 Other information
 =================
 
-CI: https://travis-ci.org/derekdata/
+CI: https://travis-ci.org/derekdata/one-page-responsive-resume
 
 Icons in images directory from: https://github.com/danleech/simple-icons
 
